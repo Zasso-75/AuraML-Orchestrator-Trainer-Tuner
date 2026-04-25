@@ -1,10 +1,10 @@
-# 🚀 AuraML: Automated Intelligence Engine
+#  AuraML: Automated Intelligence Engine
 
 AuraML is a high-performance, modular machine learning framework designed to bridge the gap between raw data and production-ready serving. It automates the "Cold Start" problem of model selection through parallelized tournaments and refines performance using Bayesian hyperparameter optimization.
 
 
 
-## 🧠 High-Level Problems Solved
+##  High-Level Problems Solved
 
 * **The Model Selection Paradox:** Instead of guessing which algorithm fits your data, AuraML runs a **Parallel Tournament**, testing multiple model families (Linear, Trees, Boosting) simultaneously across all CPU cores.
 * **Manual Tuning Bottleneck:** It replaces "GridSearch" with **Bayesian Optimization (Optuna)**, which intelligently navigates the hyperparameter space to find the "global minimum" error faster than traditional methods.
@@ -12,7 +12,7 @@ AuraML is a high-performance, modular machine learning framework designed to bri
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
 * **Data Custodian:** Automated task detection (Regression vs. Classification), smart imputation for missing values, and high-cardinality encoding.
 * **Parallel Orchestration:** Multi-threaded model evaluation to significantly reduce the time spent on the initial discovery phase.
@@ -23,7 +23,7 @@ AuraML is a high-performance, modular machine learning framework designed to bri
 
 ---
 
-## 🛠️ Project Structure
+##  Project Structure
 
 ```text
 AuraML-Engine/
@@ -42,7 +42,7 @@ AuraML-Engine/
 
 ---
 
-## 🚀 How to Use
+##  How to Use
 
 ### 1. Training & Saving
 To train the engine on your dataset and generate the "Brain":
@@ -77,14 +77,14 @@ streamlit run ui.py
 
 ---
 
-## 📊 Understanding the Output
+##  Understanding the Output
 
 * **In the UI:** After uploading a CSV and clicking "Predict," the engine appends a column named `AuraML_Prediction`. You can download this enhanced CSV directly.
 * **In the Audit Folder:** Look for `tournament_results.csv` to see how different algorithms compared. The `best_model_audit.png` will show you if the model is overfitting or underperforming on specific data segments.
 
 ---
 
-## ⚖️ Strengths & Weaknesses
+##  Strengths & Weaknesses
 
 ### Strengths
 * **Modular Architecture:** You can swap out the `DataCustodian` for a different cleaning strategy without breaking the `Tuner`.
@@ -98,14 +98,14 @@ streamlit run ui.py
 
 ---
 
-## 🛤️ Roadmap
+##  Roadmap
 - [ ] Add Automated Feature Engineering (AFE).
 - [ ] Implement SHAP values for model explainability in the UI.
 - [ ] Add Support for Time-Series forecasting modules.
 
 ***
 
-### 🛠️ Installation
+###  Installation
 ```bash
 pip install -r requirements.txt
 ```
