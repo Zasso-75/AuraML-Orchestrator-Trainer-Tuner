@@ -1,9 +1,3 @@
-An effective `README.md` is the "storefront" of your engine. It needs to balance the technical sophistication of your parallel architecture with the practical utility of a production-ready tool.
-
-Below is a comprehensive, professional `README.md` tailored for your **AuraML Engine**.
-
-***
-
 # 🚀 AuraML: Automated Intelligence Engine
 
 AuraML is a high-performance, modular machine learning framework designed to bridge the gap between raw data and production-ready serving. It automates the "Cold Start" problem of model selection through parallelized tournaments and refines performance using Bayesian hyperparameter optimization.
