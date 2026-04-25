@@ -17,7 +17,7 @@ def load_engine():
 engine = load_engine()
 
 if engine is None:
-    st.error("❌ 'auraml_engine.joblib' not found. Run your training script first!")
+    st.error("'auraml_engine.joblib' not found. Run your training script first!")
 else:
     st.sidebar.header('Engine Metadata')
     st.sidebar.info(f"**Task:** {engine.custodian.task_type.upper()}")
@@ -48,7 +48,7 @@ else:
                     processed_df['AuraML_Prediction'] = preds
                     
                     # 3. Use columns to show the success and the specific results
-                    st.success("✅ Analysis Complete!")
+                    st.success("Analysis Complete!")
                     
                     col1, col2 = st.columns([1, 1])
                     with col1:
@@ -68,7 +68,7 @@ else:
                     # 5. Provide Download Button
                     csv = processed_df.to_csv(index=False).encode('utf-8')
                     st.download_button(
-                        label="📥 Download Results as CSV",
+                        label="Download Results as CSV",
                         data=csv,
                         file_name='auraml_predictions.csv',
                         mime='text/csv'
